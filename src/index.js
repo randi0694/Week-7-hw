@@ -10,6 +10,7 @@ function searchCity(city) {
   let apiKey = "da33a000ca8e72aof6tc393eb0ce9944";
   let apiUrl =
     "https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=imperial";
+  axios.get(apiUrl).then(refreshWeather);
 }
 function handleSearchSubmit(event) {
   event.preventDefault();
@@ -18,3 +19,5 @@ function handleSearchSubmit(event) {
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("sumbit", handleSearchSumbit);
+
+searchCity("Bahamas");
