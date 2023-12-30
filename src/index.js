@@ -49,6 +49,6 @@ function handleSearchSubmit(event) {
 }
 
 let searchFormElement = document.querySelector("#search-form");
-searchFormElement.addEventListener("sumbit", handleSearchSumbit);
+searchFormElement.addEventListener("sumbit", handleSearchSubmit);
 
 searchCity("Bahamas");
