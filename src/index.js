@@ -51,6 +51,6 @@ function handleSearchSubmit(event) {
 }
 
 let searchFormElement = document.querySelector("#search-form");
-searchFormElement.addEventListener("sumbit", handleSearchSubmit);
+searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Nassau");
